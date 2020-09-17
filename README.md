@@ -1,7 +1,9 @@
 # reactTwice
 
 ## Overview
-A barebones React app that shows that the main React class is instantiated twice, and that `render()` method of the App instance is called twice although neither its  `state` nor its `props` change between renders.
+A barebones React app that shows that the main React class is instantiated twice, and that `render()` method of the App instance is called twice although neither its  `state` nor its `props` change between renders. 
+
+**This occurs only in development mode, and only because `React.StrictMode` is used by default. For more details, see [here](https://github.com/facebook/react/issues/12856).**
 
 ## Structure
 This project was created using:
